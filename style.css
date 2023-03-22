@@ -1,0 +1,138 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: #383838;
+}
+
+/* HEADER IMAGE
+ */
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(45deg, rgb(0 0 0 /.3), rgb(0 0 0 /.3)), url('./image/Background-image.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+
+#title {
+    margin: 2rem 3rem;
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.todo-container {
+    /* max-width: 400px; */
+    width: 400px;
+    margin: 0 auto;
+}
+
+.todo-list {
+    box-shadow: 0 0 50px 5px rgb(0 0 0 / .12);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.todo-list div.todo-input {
+    border-radius: 8px;
+}
+
+.todo-input {
+    background: #fff;
+    /* border-radius: 2px; */
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    padding-inline: 1rem;
+    padding-block: .5rem;
+}
+
+.todo-input form {
+    display: flex;
+    width: 100%;
+}
+
+.todo-input input[type="text"] {
+    width: 100%;
+    padding-block: .3rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.todo-input input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.todo-input input[type="checkbox"]:checked + p {
+    color: #737373;
+    text-decoration: line-through;
+}
+
+.todo-input .add-btn {
+    background-color: rgb(30, 210, 153);
+    color: #fff;
+    border: 1px solid rgb(186, 186, 186);
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* TODO ITEMS */
+
+.todo-items {
+    margin-top: 2rem;
+}
+
+.todo-items li {
+    border-bottom: 2px solid #dddddd;
+}
+
+.todo-items .todo-input {
+    padding-block: .9rem;
+}
+
+.todo-items input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+}
+
+.todo-items p {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.todo-items button {
+    border: none;
+    background-color: transparent;
+    font-size: large;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* BOTTOM SUMMARY  */
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: #737373;
+    font-size: 1rem;
+    background-color: #fff;
+}
